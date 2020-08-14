@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>GOL! Dashboard</title>
+</head>
+
+<body>
+    <!-- NAVIGASI -->
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <h1>GAME OF LIFE</h1>
+        </nav>
+    </div>
+    <!-- NAVIGASI -->
+
+    <!-- DATA -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-2">
+                <a href='https://www.freepik.com/vectors/people'>
+                    <img src="../images/LuluSyafira.png" class="img-circle" alt="Naufal Fadhil"></a>
+            </div>
+            <div class="col-sm">
+                <h2>Lulu Syafira Ramadhanti</h2>
+                <p>Rp. <input placeholder="0" id="rupiah"></>
+                </p>
+                <p>Xp. <input id="exp" placeholder="0"></p>
+            </div>
+        </div>
+
+        <table class="table mt-5">
+            <thead>
+                <tr class="bg-light text-dark">
+                    <th scope="col">#</th>
+                    <th scope="col">Tugas</th>
+                    <th scope="col">Waktu</th>
+                    <th scope="col">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Belajar</td>
+                    <td>2 Jam</td>
+                    <td><button type="button" class="btn btn-block btn-primary"
+                            onclick="rupiah(500); exp(5)">500</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Review pembelajaran</td>
+                    <td>30 Menit</td>
+                    <td><button type="button" class="btn btn-block btn-primary"
+                            onclick="rupiah(1500); exp(15)">1500</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Membantu Ibu Menyapu Rumah</td>
+                    <td>10 Menit</td>
+                    <td><button type="button" class="btn btn-block btn-primary"
+                            onclick="rupiah(250); exp(2)">250</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Membantu Ibu Menyapu Halaman</td>
+                    <td>5 Menit</td>
+                    <td><button type="button" class="btn btn-block btn-primary"
+                            onclick="rupiah(250); exp(2)">250</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Membantu Ayah Menyiram Bunga</td>
+                    <td>20 Menit</td>
+                    <td><button type="button" class="btn btn-block btn-primary"
+                            onclick="rupiah(500); exp(5)">500</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Makan Sendiri</td>
+                    <td>15 Menit</td>
+                    <td><button type="button" class="btn btn-block btn-primary"
+                            onclick="rupiah(500); exp(5)">200</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Mandi Sendiri</td>
+                    <td>10 Menit</td>
+                    <td><button type="button" class="btn btn-block btn-primary"
+                            onclick="rupiah(500); exp(3)">300</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Membersihkan Kamar</td>
+                    <td>20 Menit</td>
+                    <td><button type="button" class="btn btn-block btn-primary"
+                            onclick="rupiah(500); exp(3)">300</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Merapihkan Mainan</td>
+                    <td>5 Menit</td>
+                    <td><button type="button" class="btn btn-block btn-primary"
+                            onclick="rupiah(500); exp(3)">300</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Berpuasa</td>
+                    <td>13 Jam</td>
+                    <td><button type="button" class="btn btn-block btn-primary"
+                            onclick="rupiah(2000); exp(20)">2000</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- DATA -->
+
+    <!-- EXIT -->
+    <div class="container mb-5">
+        <form action="../dashboard.html">
+            <button type="submit" class="btn btn-block btn-danger">Go To Dashboard</button>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
